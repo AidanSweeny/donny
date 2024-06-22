@@ -6,14 +6,9 @@ import App from './App';
 import {APIProvider} from '@vis.gl/react-google-maps';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// const googleMapScript = document.createElement('script');
-// googleMapScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyCcl8ddxZ2CRJSlI7mvALrMU13MIlhlYaA&libraries=places`;
-// googleMapScript.setAttribute('async','');
-// googleMapScript.setAttribute('defer','');
-// window.document.body.appendChild(googleMapScript);
 root.render(
   <div>
-  <APIProvider apiKey={'AIzaSyCcl8ddxZ2CRJSlI7mvALrMU13MIlhlYaA'} onLoad={() => console.log('Maps API has loaded.')}>
+  <APIProvider apiKey={'KEY'} onLoad={() => console.log('Maps API has loaded.')}>
     <React.StrictMode>
           <App />
     </React.StrictMode>
